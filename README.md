@@ -1,4 +1,4 @@
 # RequestURL
-Request URL by Python
+Request URL by Python (chinese only)
 
-And this is trash, don't use it
+And this is my exercise, it's really bad
