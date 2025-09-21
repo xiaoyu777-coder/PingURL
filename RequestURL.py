@@ -11,7 +11,7 @@ while True:
         url = "https://www.baidu.com"
         print("使用默认url")
     # 如果URL不是以 "http://" 或 "https://" 开头，则添加 "https://"
-    elif not url.startswith("http://" and "https://"):
+    elif not (url.startswith("http://") or url.startswith("https://")):
         url = "https://" + url
 
     # 设置请求头，模拟浏览器访问
@@ -28,7 +28,7 @@ while True:
         response.raise_for_status()
         # 打印成功状态码和延迟（毫秒）
         print("成功:", response.status_code)
-        print("延迟:", Dec(response.elapsed.total_seconds() * 100).quantize(Dec("0.00")), "ms")
+        print("延迟:", Dec(response.elapsed.total_seconds() * 1000).quantize(Dec("0.00")), "ms")
 
     except requests.exceptions.Timeout:
         # 捕获超时异常
