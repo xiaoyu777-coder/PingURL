@@ -1,4 +1,4 @@
 # RequestURL
-Request URL by Python (chinese only)
+Ping URL by Python (Chinese only)
 
 And this is my exercise, it's really bad
